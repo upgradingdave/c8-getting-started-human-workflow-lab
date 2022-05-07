@@ -1,0 +1,73 @@
+{
+  "components": [
+    {
+      "text": "# Annual Leave Request\n\nPlease try to submit your application **at least one month** before the desired Start Date.",
+      "type": "text",
+      "id": "Field_0nh9pcl"
+    },
+    {
+      "label": "Start Date",
+      "type": "textfield",
+      "id": "Field_0uspkp3",
+      "key": "startDate",
+      "description": "Format - DD.MM.YYYY",
+      "validate": {
+        "required": true,
+        "minLength": 10,
+        "maxLength": 10,
+        "pattern": "\\d{2}\\.\\d{2}\\.\\d{4}"
+      }
+    },
+    {
+      "label": "End Date",
+      "type": "textfield",
+      "id": "Field_0r6oozg",
+      "key": "endDate",
+      "description": "Format - DD.MM.YYYY",
+      "validate": {
+        "required": true,
+        "minLength": 10,
+        "maxLength": 10,
+        "pattern": "\\d{2}\\.\\d{2}\\.\\d{4}"
+      }
+    },
+    {
+      "values": [
+        {
+          "label": "Vacation",
+          "value": "vacation"
+        },
+        {
+          "label": "Training",
+          "value": "training"
+        },
+        {
+          "label": "Other",
+          "value": "other"
+        }
+      ],
+      "label": "Reason",
+      "type": "select",
+      "id": "Field_0njl0et",
+      "key": "reason",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Comment",
+      "type": "textfield",
+      "id": "Field_1safbvr",
+      "key": "comment"
+    }
+  ],
+  "type": "default",
+  "id": "Form_RequestAnnualLeave",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.0.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.0.0"
+  },
+  "schemaVersion": 4
+}
